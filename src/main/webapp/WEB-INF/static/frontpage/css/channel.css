@@ -1,0 +1,85 @@
+/*频道页面样式*/
+
+/*banner组件样式*/
+.index_banner{width:100%;height:450px;overflow:hidden; position:relative; min-width: 1200px; margin-bottom:10px;}
+.y_priceghj{font-size:16px;margin-bottom:5px;line-height:1.5em;color:#ed6c00;}
+.y_pricelsj{margin-bottom:1px;font-size:12px;color:#959595;}
+
+/*首页标题组件样式*/
+.m_title {margin:10px 0;}
+.m_title h3{font-size:20px; font-weight:normal; height:30px; line-height:30px;}
+.m_title h3 span{font-size:14px; background:url(../img/m_title.png) 0 0 no-repeat; margin:-8px 0 0 5px; display:inline-block; vertical-align:middle;width:120px; height:25px; text-align:center; color:#fff; line-height:25px;}
+
+/*精品推荐组件*/
+.y_chnreconlist{width:100%;overflow:hidden;margin-bottom:10px;}
+.y_chnreconlist ul{width:1215px;}
+.y_chnreconlist li{float:left;width:388px;height:177px;margin-right:15px;border:1px solid #ebebeb;border-top:2px solid #ec6c00;background:#fff;-webkit-transition:border 0.3s;transition:border 0.3s;}
+.y_chnreconlist li:hover{border-color:#ec6c00}
+.y_chnreconlist li .y_pic{float:left;width:150px;height:150px;overflow:hidden;margin:12px 12px 0 12px;}
+.y_chnreconlist li .y_pic img{width:150px;height:150px;}
+.y_chnreconlist li .y_ms{float:left;width:200px;text-align:center;padding-top:35px;} 
+.y_chnreconlist li .y_ms h3{margin-bottom:5px;font-weight:normal;font-size:16px;line-height:1.5em;height:1.5em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.y_chnreconlist li .y_ms h3 a{color:#666666}
+.y_chnreconlist li .y_ms h3 a:hover{color:#ed6c00;}
+.y_chnreconlist li .y_ms h4{color:#959595;margin-bottom:12px;font-weight:normal;line-height:1.5em;height:1.5em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.y_chnreconlist li .y_priceghj{font-size:16px;margin-bottom:5px;line-height:1.5em;color:#ed6c00;}
+.y_chnreconlist li .y_pricelsj{margin-bottom:1px;font-size:12px;color:#959595;}
+
+/*新品热卖组件*/
+.y_chnhotlist{width:100%;overflow:hidden;margin-bottom:20px;}
+.y_chnhotlist ul{width:1210px;}
+.y_chnhotlist li{float:left;width:230px;padding:15px 0;text-align:center;margin-right:10px;border:1px solid #ebebeb;border-top:2px solid #ec6c00;background:#fff;-webkit-transition:border 0.3s;transition:border 0.3s;}
+.y_chnhotlist li:hover{border-color:#ec6c00}
+.y_chnhotlist li .y_pic{width:140px;height:140px;overflow:hidden;margin:0 auto 8px;}
+.y_chnhotlist li .y_pic img{width:140px;height:140px;}
+.y_chnhotlist li h3{margin-bottom:5px;font-weight:normal;font-size:16px;line-height:1.5em;height:1.5em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.y_chnhotlist li h3 a{color:#666666}
+.y_chnhotlist li h3 a:hover{color:#ed6c00;}
+.y_chnhotlist li h4{color:#959595;margin-bottom:8px;font-weight:normal;line-height:1.5em;height:1.5em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.y_chnhotlist li .y_priceghj{font-size:16px;margin-bottom:5px;line-height:1.5em;color:#ed6c00;}
+.y_chnhotlist li .y_pricelsj{margin-bottom:1px;font-size:12px;color:#959595;}
+
+/*智能硬件频道*/
+.y_znyj .y_chnreconlist li,.y_znyj .y_chnhotlist li{border-top-color:#696969}
+.y_znyj .y_chnreconlist li:hover,.y_znyj .y_chnhotlist li:hover{border-color:#696969}
+.y_znyj .y_chnhotlist .y_item1,.y_znyj .y_chnhotlist .y_item3,.y_znyj .y_chnhotlist .y_item5{background:#e5e5e5}
+.y_znyj .m_title h3{color:#666}
+.y_znyj .m_title h3 span{background-image:url(../img/m_title2.png);}
+
+/*生活电器频道*/
+.y_shdq .y_chnreconlist li,.y_shdq .y_chnhotlist li{border-top-color:#279fde}
+.y_shdq .y_chnreconlist li:hover,.y_shdq .y_chnhotlist li:hover{border-color:#279fde}
+.y_shdq .m_title h3{color:#666}
+.y_shdq .m_title h3 span{background-image:url(../img/m_title3.png);}
+.y_shdq .y_chnhotlist li{margin-right:0;margin-left:11px;}
+.grid_s12m0 .col_sidebar{float:left;width:470px;max-height:280px;overflow:hidden;padding:0;border:none;margin-bottom:20px;}
+.grid_s12m0 .main_wrap{float:left;width:730px;}
+
+/*家电附件频道*/
+.y_jddj .y_chnreconlist li,.y_jddj .y_chnhotlist li{border-top-color:#0e883f}
+.y_jddj .y_chnreconlist li:hover,.y_jddj .y_chnhotlist li:hover{border-color:#0e883f}
+.y_jddj .m_title h3{color:#666}
+.y_jddj .m_title h3 span{background-image:url(../img/m_title4.png);}
+.y_jdadlist{width:100%;overflow:hidden;border-left:1px solid #ebebeb;margin-bottom:10px;}
+.y_jdadlist li{float:left;position:relative;width:239px;height:190px;padding-top:1px;background:#fff;border:1px solid #ebebeb;margin-left:-1px;transition:border-color 0.3s;}
+.y_jdadlist li:hover{border-top:2px solid #0e883f;padding-top:0;}
+.y_jdadlist li h3{margin-top:13px;padding:0 25px;font-size:16px;line-height:1.5em;height:1.5em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.y_jdadlist li h3 a{color:#12c2bf}
+.y_jdadlist li h4{color:#12c2bf;margin-bottom:8px;padding:0 25px;font-weight:normal;line-height:1.5em;height:1.5em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.y_jdadlist .y_pic{width:120px;height:120px;overflow:hidden;margin:0 auto;}
+.y_jdadlist .y_pic img{width:120px;height:120px;}
+
+/*特卖场频道*/
+.y_tmc .y_chnreconlist li,.y_tmc .y_chnhotlist li{border-top-color:#d70c37}
+.y_tmc .y_chnreconlist li:hover,.y_tmc .y_chnhotlist li:hover{border-color:#d70c37}
+.y_tmc .m_title h3{color:#666}
+.y_tmc .m_title h3 span{background-image:url(../img/m_title5.png);}
+.y_tmprdlist{width:100%;overflow:hidden;border-left:1px solid #ebebeb;margin-bottom:10px;}
+.y_tmprdlist li{float:left;position:relative;width:239px;padding-top:1px;background:#fff;border:1px solid #ebebeb;margin-left:-1px;transition:border-color 0.3s;}
+.y_tmprdlist li:hover{border-top:2px solid #d80b34;padding-top:0;}
+.y_tmprdlist li h3{margin-top:11px;padding:0 17px;font-size:16px;font-weight:normal;line-height:1.5em;height:1.5em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.y_tmprdlist li h3 a{color:#d80b34}
+.y_tmprdlist li h4{color:#999;margin-bottom:5px;padding:0 17px;font-weight:normal;line-height:1.5em;height:1.5em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.y_tmprdlist .y_pic{float:right;width:120px;height:120px;overflow:hidden;margin:0 15px 15px 0;}
+.y_tmprdlist .y_pic img{width:120px;height:120px;}
+.y_tmprdlist .y_priceghj{float:left;color:#d80b34;padding:10px 0 0 17px;}

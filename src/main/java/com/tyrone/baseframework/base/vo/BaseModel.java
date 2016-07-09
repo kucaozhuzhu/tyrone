@@ -16,11 +16,17 @@ public class BaseModel implements Serializable {
     @Id
     private String uuid;
 
-    private String oper;
+    private Integer status;
 
-    private String opeTime;
+    private String createTime;
 
-    private String delFlag;
+    private String createUserId;
+    
+    private String deleteTime;
+    
+    private String deleteUserId;
+    
+    private String remarks;
     @Transient
     private Map<String, Integer> mapCondition = new HashMap<String, Integer>();
     @Transient
@@ -48,31 +54,55 @@ public class BaseModel implements Serializable {
         this.sortType = sortType;
     }
 
-    public String getOper() {
-        return this.oper;
-    }
+    public Integer getStatus() {
+		return status;
+	}
 
-    public void setOper(String oper) {
-        this.oper = oper;
-    }
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
 
-    public String getOpeTime() {
-        return this.opeTime;
-    }
+	public String getCreateTime() {
+		return createTime;
+	}
 
-    public void setOpeTime(String opeTime) {
-        this.opeTime = opeTime;
-    }
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
 
-    public String getDelFlag() {
-        return this.delFlag;
-    }
+	public String getCreateUserId() {
+		return createUserId;
+	}
 
-    public void setDelFlag(String delFlag) {
-        this.delFlag = delFlag;
-    }
+	public void setCreateUserId(String createUserId) {
+		this.createUserId = createUserId;
+	}
 
-    public String getUuid() {
+	public String getDeleteTime() {
+		return deleteTime;
+	}
+
+	public void setDeleteTime(String deleteTime) {
+		this.deleteTime = deleteTime;
+	}
+
+	public String getDeleteUserId() {
+		return deleteUserId;
+	}
+
+	public void setDeleteUserId(String deleteUserId) {
+		this.deleteUserId = deleteUserId;
+	}
+
+	public String getRemarks() {
+		return remarks;
+	}
+
+	public void setRemarks(String remarks) {
+		this.remarks = remarks;
+	}
+
+	public String getUuid() {
         return this.uuid;
     }
 
@@ -110,10 +140,15 @@ public class BaseModel implements Serializable {
         return true;
     }
 
-    public String toString() {
-        return "BaseModel [uuid=" + this.uuid + ", oper=" + this.oper
-                + ", opeTime=" + this.opeTime + ", delFlag=" + this.delFlag
-                + ", sortName=" + this.sortName + ", sortType=" + this.sortType
-                + "]";
-    }
+	@Override
+	public String toString() {
+		return "BaseModel [uuid=" + uuid + ", status=" + status
+				+ ", createTime=" + createTime + ", createUserId="
+				+ createUserId + ", deleteTime=" + deleteTime
+				+ ", deleteUserId=" + deleteUserId + ", remarks=" + remarks
+				+ ", mapCondition=" + mapCondition + ", sortName=" + sortName
+				+ ", sortType=" + sortType + "]";
+	}
+
+   
 }

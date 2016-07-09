@@ -106,7 +106,7 @@ public class BaseController<M extends BaseModel, QM extends M> {
     @RequestMapping(value = { "/add" }, method = { org.springframework.web.bind.annotation.RequestMethod.POST })
     public String add(Model model, @ModelAttribute("m") M m,
             HttpServletRequest request) {
-        this.mapErrorMsg = new HashMap();
+        this.mapErrorMsg = new HashMap<String, List<String>>();
         if (!checkAdd(model, m, request)) {
             request.setAttribute("ShowMsgs", this.mapErrorMsg);
             return (String) request.getAttribute("ERROR_BACK_URL");
@@ -138,7 +138,7 @@ public class BaseController<M extends BaseModel, QM extends M> {
     @RequestMapping(value = { "/update" }, method = { org.springframework.web.bind.annotation.RequestMethod.POST })
     public String update(Model model, @ModelAttribute("m") M m,
             HttpServletRequest request) {
-        this.mapErrorMsg = new HashMap();
+        this.mapErrorMsg = new HashMap<String, List<String>>();
         if (!checkUpdate(model, m, request)) {
             request.setAttribute("ShowMsgs", this.mapErrorMsg);
             return (String) request.getAttribute("ERROR_BACK_URL");
@@ -185,7 +185,7 @@ public class BaseController<M extends BaseModel, QM extends M> {
             HttpServletResponse response) throws Exception {
         this.bs.deletes(needDeleteUuids);
 
-        Map<String, Object> jsonMap = new HashMap();
+        Map<String, Object> jsonMap = new HashMap<String, Object>();
 
         jsonMap.put("rsp", Boolean.valueOf(true));
         PrintWriter out = response.getWriter();
@@ -221,7 +221,7 @@ public class BaseController<M extends BaseModel, QM extends M> {
     @RequestMapping({ "/queryList" })
     public String queryList(HttpServletResponse response,
             HttpServletRequest request) throws Exception {
-        List<BaseModel> showList = new ArrayList();
+        List<BaseModel> showList = new ArrayList<BaseModel> ();
 
         Map<String, Object> pageParamMap = parsePageParam(request);
 
@@ -260,7 +260,7 @@ public class BaseController<M extends BaseModel, QM extends M> {
             showList.add(m);
         }
 
-        Map<String, Object> jsonMap = new HashMap();
+        Map<String, Object> jsonMap = new HashMap<String, Object>();
 
         jsonMap.put("sEcho", pageParamMap.get("sEcho"));
         jsonMap.put("iTotalRecords", Integer.valueOf(totalCount));
@@ -280,7 +280,7 @@ public class BaseController<M extends BaseModel, QM extends M> {
     protected QM parseQueryModel(HttpServletRequest request) {
         String searchParam = request.getParameter("searchParam");
         QM qm = getQueryModel();
-        Map<String, Object> searchParamMap = new HashMap();
+        Map<String, Object> searchParamMap = new HashMap<String, Object>();
         JSONArray searParamArr = JSONArray.parseArray(searchParam);
 
         for (Object o : searParamArr) {
@@ -317,7 +317,7 @@ public class BaseController<M extends BaseModel, QM extends M> {
     protected Map<String, Object> parsePageParam(HttpServletRequest request) {
         String data = request.getParameter("aoData");
 
-        Map<String, Object> pageParamMap = new HashMap();
+        Map<String, Object> pageParamMap = new HashMap<String, Object>();
         JSONArray jsonArr = JSONArray.parseArray(data);
         for (Object o : jsonArr) {
             JSONObject jo = (JSONObject) o;
@@ -431,8 +431,8 @@ public class BaseController<M extends BaseModel, QM extends M> {
             }
         }
 
-        qm.setDelFlag("1");
-        qm.getMapCondition().put("delFlag",
+        qm.setStatus(1);
+        qm.getMapCondition().put("status",
                 Integer.valueOf(ConditionOpTypeEnum.EQ.getCode()));
 
         qm = preparedQMFixValue(qm);
@@ -461,7 +461,7 @@ public class BaseController<M extends BaseModel, QM extends M> {
     public String query(@ModelAttribute("qm") QM qm,
             @RequestParam("pageShow") String pageShow,
             HttpServletRequest request) {
-        this.mapErrorMsg = new HashMap();
+        this.mapErrorMsg = new HashMap<String, List<String>>();
         if (!checkQuery(qm, request)) {
             request.setAttribute("ShowMsgs", this.mapErrorMsg);
             return (String) request.getAttribute("ERROR_BACK_URL");

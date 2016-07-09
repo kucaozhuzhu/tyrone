@@ -4,6 +4,8 @@
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.persistence.Entity;
+
 import com.tyrone.baseframework.utils.DateFormatHelper;
  
  public class TriggerModel

@@ -43,7 +43,7 @@
     <!-- sql注入 -->
     <filter>
         <filter-name>SQLFilter</filter-name>
-        <filter-class>com.aebiz.b2b2c.basebusiness.filters.SQLFilter</filter-class>
+        <filter-class>com.tyrone.baseframework.filter.SQLFilter</filter-class>
         <init-param>
           <param-name>sqlURL</param-name>
           <param-value>/errorpage/sqlerror.jsp</param-value>

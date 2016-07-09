@@ -1,0 +1,32 @@
+/*优食团 页面*/
+
+  /*商家 tab*/
+
+
+	/*商家or 商品展示 tab*/
+.h_top{position:relative; overflow: hidden; }
+.h_top .item{ position:relative;overflow:hidden; margin-bottom:1rem; background:#fff; border-bottom:2px solid #9db032;}
+.h_top .item .s_pic {width: 7.5rem;position:absolute; left: 0;top: 0;}
+.h_top .item .b_pic{width: 7rem;}
+.h_top .item .pricebox{ height:4rem; line-height:4rem; margin:0 1rem;font-size: 1.4rem;}
+.h_top .item .price{font-size:2.2rem; color:#9db032;}
+.h_top .item .price span{ color:#000;font-size: 1.4rem;}
+.h_top .item .price b{ font-size:1.2rem;line-height: 3.5rem;vertical-align: top;}
+.h_top .item .price .ori{font-size: 1rem color:#666;}
+.h_top .item .txt {position: absolute;height:4rem; line-height:4rem; bottom: 4rem;left: 0;width: 100%;background: rgba(255,255,255,0.7) none repeat scroll !important;}
+.h_top .item p.des{margin:0 1rem; font-size: 1.4rem; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.h_top .item p.des b{margin-right:0.3rem;letter-spacing: 0.3rem;}
+.h_top .item p.countdown{ font-size: 1.2rem; color:#666;background: url(../img/clock.png) no-repeat left;padding-left: 8%;background-size: 16%;}
+
+.h_top .m_p_title{  height:4rem; line-height:4rem; overflow: hidden;}
+.h_top .m_p_title a{overflow:hidden; zoom:1; display:block; padding:0 3%;}
+.h_top .m_p_title .fl{font-size: 1.4rem; color:#666;}
+.h_top .m_p_title .fr span{ background:url(../img/m_next.png) no-repeat right 50%; background-size:60% 70%;width:20px; height:2rem; vertical-align:middle;  display:inline-block;}
+
+
+.h_like{position:absolute; right:1rem; top:1rem; width:2.5rem; height:2.2rem;background: url(../img/heart.png) no-repeat;background-size: cover;}
+.h_likein{ background-position:0 -26px;background-size: cover;}	
+
+
+
+

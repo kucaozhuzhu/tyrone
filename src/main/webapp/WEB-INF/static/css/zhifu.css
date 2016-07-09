@@ -1,0 +1,71 @@
+/*在线充值 页面*/
+h3.pay_tit{ height:3.5rem; line-height:3.5rem; font-size:1.6rem; color:#333; margin:0 3%; font-weight:normal;}
+.m_person_tit{background:#fff;position:relative; overflow: hidden;}
+.m_p_title{  height:4rem; line-height:4rem; text-align:right; margin:0 3%;}
+.m_p_title a{overflow:hidden; zoom:1; display:block; }
+.m_p_title .fl{font-size:1.4rem;text-align: left;}
+.m_p_title .fr{ font-size: 1.2rem; color:#999;}
+.m_p_title .fr span{ background:url(../img/m_next.png) no-repeat right 50%; background-size:60% 70%;width:20px; height:2rem; vertical-align:middle;  display:inline-block;}
+
+/*银行卡选择 页面*/
+.h_way .m_p_title{height:5rem; line-height:5rem;}
+.h_way .m_p_title img{width:75%; vertical-align:middle;}
+
+/*支付平台-充值 页面*/
+h3.pay_tit2{background:url(../img/zfb1.png) no-repeat left; background-size: 33%;height: 4.5rem;line-height: 4.5rem;}
+.h_recharge ul{margin-bottom:2rem;}
+.h_recharge li{background:#fff; float: left;padding: 0.2rem 0;margin-right: 0.5rem;cursor: pointer;border: 1px solid #dedede;width: 22.5%;text-align: center;color: #666;ffont-size: 1.6rem;background: #fff;}
+.h_recharge li.last{margin:0;}
+.h_recharge li.active{padding:0.1rem 0;border: 2px solid #9db032;cursor: default;background: url(../img/m_cur.png) right bottom no-repeat #fff;}
+.h_recharge .form-control{font-size: 1.4rem;border: none;color: #b5b5b5;padding: 0.5rem;width: 100%;background: #fff;border-radius: 0;border: 1px solid #ccc;margin-bottom: 1rem;}
+	
+/*支付平台-充值 页面*/
+.h_cardpay .pay_tit{font-size: 1.4rem}
+.h_cardpay .m_person_tit{background:none;}
+.h_cardpay .m_p_title{background:#fff;margin:0; padding:0 3%;}
+.h_cardpay .m_p_title .fl{font-size: 1.4rem; margin-left:3%;}
+
+/*平台支付 - 充值1 页面*/
+.h_center .pay_tit{height:2.5rem; line-height:2.5rem; margin:0; background: url(../img/m_top.png) no-repeat 2.5% #4a6bcc; background-size:3%;}
+.h_center .pay_tit a{display:block;background: url(../img/cft2.png) no-repeat 8%; padding-left:6.5rem; font-size: 1.4rem; color:#fff; font-weight:normal;background-size:15%;}
+.h_center .recharge{overflow: hidden;background: #fff;padding: 0.5rem 3%;}
+.h_center .recharge label{font-size: 1.4rem; line-height:2rem;}
+.h_center .recharge p{font-size:1.4rem;}
+.h_center .recharge b{ font-weight:normal;color:#cc0000; }
+
+/*平台支付 - 充值2 页面*/
+.h_paybox .pay_tit{font-size: 1.4rem}
+.h_paybox .m_p_title .fl{font-size: 1.4rem}
+.h_paybox .loginbox{background:#fff;margin:0 1rem;padding: 0 1rem 2rem; overflow:hidden;}
+.h_paybox .loginbox p{font-size: 1.4rem; color:#666; margin: 1rem 0 0.3rem 0;}
+.h_paybox .loginbox p span{color:#ff9900;}
+.h_paybox .loginbox .form-control{font-size: 1.6rem;border: none;color: #b5b5b5;padding: 0.4rem;width: 100%;background: #f7f7f7;border-radius: 0;border: 1px solid #ccc;}
+.h_paybox .loginbox .password{background:url(../img/lock.png) no-repeat 98% #f7f7f7; background-size:7%;}
+.h_paybox .btn-custom5{background:#4a6bcc; border:1px solid #4a6bcc;margin:1.5rem 0 0;width: 100%;}
+
+/*平台支付 - 充值3 页面*/
+.h_paybox2 .loginbox{padding:0;}
+.h_paybox2 .m_p_title img{width:70%; vertical-align:middle;}
+.h_paybox2 .m_p_title{height:4rem; line-height:4rem;}
+.h_paybox2 .m_p_title .fl{font-size:1.6rem;margin:0;}
+.h_paybox2 .m_p_title .fl i{display:inline-block;}
+
+/*平台支付 - 充值4 页面*/
+.h_cardpay2 .h_paybox .pay_tit{margin:1rem 0 0.3rem;}
+.h_cardpay2 .pay_tit span.fl50{border-left: 1px solid #dedede;width: 30%;line-height: 2rem;height: 2rem;margin: 0.7rem 0;padding-left: 1rem;font-size: 1.6rem;color: #666;}
+.h_cardpay2 .h_paybox .loginbox p{margin-top:0;}
+
+/*平台支付 - 充值5 页面*/
+.h_paybox .btn-custom5.next{width:90%;margin:1rem 4% 0;}
+
+/*平台支付 - 充值6 页面*/
+.h_cardpay2 .h_paybox .loginbox p.infor{margin-bottom:0.5rem;}
+.h_paybox .btn-custom5.next2{width:90%;margin:0 0 0 6%; background:#ced798; border:1px solid #ced798;padding: 0.8rem 0;}
+
+/*平台支付 - 充值7页面*/
+.h_shade{position:absolute; top:0; left:0; background:rgba(0,0,0,0.3);width: 100%;height: 100%;}
+.h_shade .wrapper{position:absolute; top:35%;left:6%; width:88%; text-align:center; background:#dfe2e3; border:1px solid #dedede; border-radius:5px; padding:3rem 0 2rem;}
+
+.h_shade .wrapper b{display:block; border:1px solid #79a92c; border-radius:50%; width:5rem; height:5rem; line-height:5rem; text-align:center; color:#79a92c; font-size:3.5rem; margin:0 auto;}
+.h_shade .wrapper p{ font-size: 1.4rem; color:#000;margin: 2rem 0;}
+.h_shade .wrapper .btn-custom5{ background:#79a92c; border:1px solid #79a92c; border-radius:3px;}

@@ -1,0 +1,111 @@
+
+.h_nav,.h_mall,.h_group,.h_category,.h_gfood,header{background:#fff;}
+
+
+/*首页广告*/
+.h_advert{ width:100%; height:3rem; line-height:3rem; color:#fff; background:url(../img/horn.png) no-repeat 1rem #454545; font-size:1.5px; background-size:6%;   }
+.h_advert p{width:68%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding-left:3.5rem;}
+.h_advert span{ display:block; width:15%;overflow:hidden; background:url(../img/del.png) no-repeat center; background-size:30%;}
+
+/*首页导航*/
+.h_nav{overflow:hidden;width: 100%;margin: 0 auto;padding: 0.5rem 0 2rem; border-bottom:1px solid #dedede;font-size: 1.2rem;}
+.h_nav li{float:left;width:25%;text-align: center;}
+.h_nav li a{display:block;overflow:hidden;}
+.h_nav li div{width: 72%;margin: 10% auto 7%;text-align: center;}
+
+/*品牌商城*/
+.h_mall a{display:block;}
+.h_inner .name li{ float:left; width:50%;}
+.h_inner .name li a{padding-top:0.2rem; display:block; text-align:center; border-top:1px solid #f5f5f5; border-left:1px solid #f5f5f5;overflow: hidden;}
+.h_inner .name li a.bline_none{border-top:none;}
+
+/*优食团*/
+.h_group  h2{ font-size:1.4rem;font-weight: normal;}
+.h_group  h3{ font-size:1.2rem;font-weight: normal;}
+.h_group .item{position:relative;}
+.h_group .item .text{padding:4% 0 0 6%;}
+.h_group .item .tu{text-align: right;margin-right: 2rem;}
+.h_group .name li{ width:100%;}
+.h_group .name li a{padding: 3%;}
+.h_group .infor{text-align:left;}
+.h_group  p.des{ font-size:1rem; color:#999999;line-height: 2rem;height: 2rem;overflow: hidden;}
+.h_group  p.price{font-size:1rem; color:#ff9900; font-weight:bold;}
+.h_group  .hot{position: absolute;right: 0.5rem;top: 3rem;width: 4rem;height: 4rem;line-height: 4rem;text-align: center;color: #fff;font-size: 0.8rem;background: url(../img/hot.png) no-repeat 50%;background-size: cover;}
+.h_group  .tuijian{background: url(../img/tuijian.png) no-repeat 50%;background-size: cover;}
+
+
+/*活动专区*/
+.h_exercise{}
+.h_exercise h2{color:#cc0033;}
+.h_exercise ul.name li{float:left; width:50%; position:relative;}
+.h_exercise ul.name li a{ border-right:none; border-bottom:none;}
+.h_exercise ul.name li.mj{text-align:center;}
+.h_exercise ul.name li.mj a{ border-top:none; }
+.h_exercise ul.name li.tj a{ padding:3%;}
+.h_exercise ul.name li.tj .fr{width:40%;}
+.h_exercise ul.name li.tj .infor{float:left;width:60%;}
+.h_exercise ul.name li.tj  img{margin:0;}
+.h_exercise  p.des{font-size:0.8rem; color:#999;width: 100%;height: 2rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.h_exercise  p.price del{font-size:0.8rem; color:#999;margin-left:0.1rem;font-weight: normal;} 
+.h_exercise .tu{ margin:0 auto;}
+
+/*优食配品类*/
+.h_category{overflow: hidden;}
+.h_category .h_title h3{width:26%;}
+.h_category .ysp{width:74%; position:relative;}
+.h_category .sort{position: relative;height: 4rem; }
+.h_category .sort ul{ position:absolute;overflow:visible; white-space:nowrap;}
+.h_category .sort ul li{ display:inline-block; width:15%;padding-left: 2rem;}
+.h_category .sort ul li.cur a{border-bottom:2px solid #9db032;height:3.9rem;}
+.h_category .sort ul li a{font-size:1.3rem; color:#9db032;    text-align: center; display:inline-block; width:100%; overflow:hidden;}
+
+.h_category .inner{display:none;}
+.h_category .inner a{display:block;}
+.h_category .inner .r_text{ text-align:center;}
+.h_category .r_text h2{ font-size:1.5rem; color:#9db032; margin-top:1rem;font-weight: normal;}
+.h_category .r_text p{font-size:1.1rem; }
+.h_category .r_text .r_pic{  width: 90%; margin: 0 auto;}
+.h_category .r_text .btn{display: inline-block;bottom: -3rem;margin-top: -3rem;}
+.h_category .show{display:block;}
+
+/*优先食品*/
+.h_gfood{width:100%; overflow:hidden;}
+.h_gfood .tu{height:8rem; margin:1rem 0; }
+.h_gfood  h2{ font-size:1.5rem;  margin-top:1rem; font-weight: normal;}
+.h_gfood  p{font-size:0.9rem; padding: 0 1rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.h_gfood  p.price{ color:#ff9900;font-size:0.8rem;}
+.h_gfood .h_inner{position: relative;height: 16rem; }
+.h_gfood .h_inner ul{ position:absolute;overflow:visible; white-space:nowrap;}
+.h_gfood .h_inner ul li{ display:inline-block;width:40%;  float:none;}
+.h_gfood .h_inner ul li a{ display:inline-block; width:100%; overflow:hidden; border-bottom:1px solid #f5f5f5; border-top:none;}
+.h_gfood .h_inner ul li a.last{border-right:1px solid #f3f3f3;}
+
+/*搜索页*/
+
+.h_keyword .tit {height: 4rem;line-height: 4rem;text-align: left; border-bottom:1px solid #ccc;}
+.h_keyword .tit a {font-size:1.6rem;display: block;;padding: 0 3%;}
+
+
+/*商品二级分类页*/
+.h_carnemu{ width: 74%;height: 100%;margin-left: 26%;overflow: hidden;}
+.h_carnemu .pic img{width:100%; height:auto;}
+.h_carnemu ul li{ width:33.33%; float:left;}
+.h_carnemu ul li a{  font-size:1.5rem; color:#999; display:block; text-align:center;padding-top: 1.5rem;}
+.h_carnemu ul li a i{ display:block; width:4rem;margin: 0 auto 0.5rem;}
+aside.slide-wrapper {  position: absolute;  z-index: 4;  left: 0;  top: 4rem;  width: 26%;  height:100%;  border-right:1px solid #ccc; }
+aside.slide-wrapper > ul {  background-color: #f2f2f2;  min-height: 100%;}
+aside.slide-wrapper li > a {  height:4.8rem; line-height:4.8rem;  border-bottom: 1px solid #ccc;  font-size: 1.5rem;  display: block;  padding-left:1rem;}
+aside.slide-wrapper li.current > a {  background-color: #fff;  color:#9db032;}
+
+/*二维码扫描页*/
+.h_ewmbox{position: absolute; left:0; top:0;overflow: hidden;height: 100%;display: block; width:100%;text-align: center;}
+.h_erweima {background: rgba(0,0,0,0.5) none repeat scroll !important;position: relative; height: 100%;max-width: 640px;margin: 0 auto;    overflow: hidden;}
+.h_erweima .box { text-align:center; margin:10rem auto 2rem;overflow:hidden; width:80%; height:48%; background:url(../img/ewm.png) no-repeat; background-size:100% 100%;}
+.h_erweima .box img{width:80%; height:80%; margin:10%;;}
+.h_erweima p{font-size:1.5rem; text-align:center; color:#fff;}
+.h_erweima a.del{position:absolute; bottom:2rem; left:2rem; width:2rem; height:2rem;background:url(../img/close.png) no-repeat; background-size:100%; }
+
+
+
+    
+      

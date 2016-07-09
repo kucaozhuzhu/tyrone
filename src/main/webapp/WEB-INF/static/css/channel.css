@@ -1,0 +1,151 @@
+/*优食配 页面*/
+
+	/*焦点图*/
+.h_visual3{background:#fff;}
+.h_visual3 .slides > div{padding:1rem 0 3rem;}
+.h_visual3 .slides img {width: 60%;}
+
+	/*价格*/
+.h_price p.price {font-size: 1.6rem;height: 4rem;line-height: 4rem;margin: 0 3%;border-top:1px solid #dedede;}
+.h_price p.price span {color: #9db032;}
+
+	/*内容*/
+.h_tccontent{ padding:3%;}
+.h_tccontent .des{ font-size:1.2rem;; padding-bottom:1rem;}
+.h_tccontent .des h3{line-height: 2.2rem;}
+.h_tccontent .des span{ font-weight:normal;}
+.h_tccontent .cycle{ padding:1rem 0;}
+.h_tccontent .cycle p{font-size:1.4rem; color:#666;height: 2.2rem;}
+.h_tccontent .cycle .btn-custom4{border-radius:0;padding:0.4rem 0.8rem; margin-right:0.5rem;}
+.h_tccontent .h_safefood{  overflow:hidden; }
+.h_tccontent .h_safefood .des h3{font-size:1.6rem; margin:1rem 0;}
+.h_tccontent .h_safefood .des p{ margin-bottom:1rem; color:#606151; font-size:1.2rem;; text-indent:2rem;line-height: 1.8rem;}
+.h_tccontent .h_safefood ul li{ float:left; text-align:center;width: 33%; margin-bottom:1rem;}
+.h_tccontent .h_safefood ul li .pic{ overflow:hidden;border-radius: 50%;width: 80%;margin: 0 auto 0.5rem;}
+.h_tccontent .h_safefood ul li .pic img{width:100%; height:100%;border-radius: 50%;}
+.h_tccontent .h_safefood ul li a{display:block;}
+
+	/*--立即订购--*/
+.h_account{ max-width: 640px;position: relative;}
+.account_box{max-width: 640px;position: fixed;width: 100%;bottom: 0rem;background: rgba(255,255,255,0.7);text-align: center;padding: 1rem 0;}
+.account_box .btn-custom{padding: 1rem 0;width: 90%;border-radius: 2rem;}
+
+
+/*优食鲜品-水果*/
+.h_xp .pic{position:relative;}
+.h_xp .item{position: absolute;left: 2rem;top: 3rem;}
+.h_xp .item2{ right:2rem; left:auto;}
+.h_xp .item h3{ font-size:1.4rem;}
+.h_xp .item p{ font-size:1.2rem;;color:#666;}
+.h_xp .item .price{margin-top:0.5rem; padding: 0 2rem 0 0.5rem;background: url(../img/icon.png) no-repeat 90% #9db032; background-size: 10%;height:2.5rem; line-height:2.5rem; color:#fff; width:5rem; font-size:1.8rem;}
+.h_xp .item .price b{ font-size:1.1rem;}
+
+	/*商家展示*/
+.h_seller{position:relative; overflow: hidden;}
+.h_seller ul{margin:1rem 1rem 0 0; }
+.h_seller li{ width:50%; float:left; }
+.h_seller .item{ position:relative;overflow:hidden;background:#fff; margin:1rem 0 0 1rem;border:1px solid #dedede;}
+.h_seller .item p.des{ font-size:1.4rem; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.h_seller .item p.des b{margin-right:0.3rem;letter-spacing: 0.3rem;}
+.h_seller .item .txt {bottom:3rem;height: 3rem;line-height: 3rem; position: absolute;left: 0;width: 100%;background: rgba(255,255,255,0.5) none repeat scroll !important;}
+.h_seller .item p.des{margin:0 1rem;}
+.h_seller .item .pricebox{font-size:1.2rem;; height:3rem; line-height:3rem;color: #9db032;margin: 0 1rem;}
+.h_seller .item .pricebox .fr{width:70%; text-align:right;}
+.h_seller .item .pricebox .fl{width:30%;}
+.h_seller .item del{font-size:1rem;color: #666; }
+.h_seller .item .logotu img{vertical-align:middle;}
+
+.h_seller .title{position:relative; border-bottom:2px solid #9db032; height:1rem; margin-top:2rem;}
+.h_seller .title h3{color: #9db032;position: absolute;left: 50%;top: -0.5rem;font-size: 1.6rem;letter-spacing: 0.5rem;background: #f2f3f2;padding: 0 1rem;margin-left: -4rem;line-height: 1.6rem;}
+.h_seller .title h3 span{font-weight:normal; display:block; font-size:0.9rem;letter-spacing: 0.01rem;}
+
+
+	/*食品安全内容 页面*/
+.h_knowledge{background:#fff; padding:1rem;}
+.h_knowledge h3{font-size:2rem; color:#000;font-weight: normal;}
+.h_knowledge p.time{ font-size:1.2rem;; margin:1rem 0;}
+.h_knowledge p.time b{ font-weight:bold; margin-left:1rem;}
+.h_knowledge .txt{font-size:1.4rem;}
+.h_knowledge .txt h4{ font-weight:normal;}
+.h_knowledge .txt p{ margin-bottom:1rem; }
+
+	/*食品安全课堂 页面*/
+.h_ktcontent{ overflow:hidden;}
+.h_ktcontent a{display:block; width:100%; height:100%;overflow: hidden;}
+.h_ktcontent dl{ background:#fff;}
+.h_ktcontent dl dt .tet{margin:0 0.5rem;}
+.h_ktcontent dl dt h3{ font-size:1.4rem; font-weight:normal; margin-top:0.5rem;  height:3rem; line-height:1.5rem; overflow:hidden;}
+.h_ktcontent dl dt p{font-size:1.2rem; color:#666;height: 5rem;overflow: hidden;line-height: 1.6rem;}
+
+/*宣传跳转页*/
+.h_goon a{display:block;width:100%; height:100%;position: fixed;}
+.h_goon img{width:100%;}
+
+
+	/*商家or 商品展示 tab*/
+.h_top{position:relative; overflow: hidden; }
+.h_top .item{ position:relative;overflow:hidden; margin-bottom:1rem; background:#fff; border-bottom:2px solid #9db032;}
+.h_top .item .s_pic {width: 7.5rem;position:absolute; left: 0;top: 0;}
+.h_top .item .b_pic{width: 7rem;}
+.h_top .item .pricebox{ height:4rem; line-height:4rem; margin:0 1rem;font-size:1.4rem;}
+.h_top .item .price{font-size: 1.8rem;color:#9db032;}
+.h_top .item .price span{ color:#000;font-size:1.4rem;}
+.h_top .item .price b{ font-size:1.2rem;line-height: 3.5rem;vertical-align: top;}
+.h_top .item .price span.ori{font-size:1.1rem; color:#666;}
+.h_top .item .txt {position: absolute;height:4rem; line-height:4rem; bottom: 4rem;left: 0;width: 100%;background: rgba(255,255,255,0.7) none repeat scroll !important;}
+.h_top .item p.des{margin:0 1rem; font-size:1.4rem; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.h_top .item p.des b{margin-right:0.3rem;letter-spacing: 0.3rem;}
+.h_top .item p.countdown{ font-size:1.2rem;; color:#666;background: url(../img/clock.png) no-repeat left;padding-left: 8%;}
+
+.h_top .m_p_title{  height:4rem; line-height:4rem; overflow: hidden;}
+.h_top .m_p_title a{overflow:hidden; zoom:1; display:block;padding: 0 1rem;;}
+.h_top .m_p_title .fl{font-size:1.4rem; color:#666;}
+.h_top .m_p_title .fr span{ background:url(../img/m_next.png) no-repeat right 50%; background-size:60% 70%;width:20px; height:2rem; vertical-align:middle;  display:inline-block;}
+
+
+/*促销页面*/
+
+	/*1F全部促销*/
+.h_hot .pic:hover{border:1px solid #e6e6e6;}
+.h_hot ul.over .gq_time{font-size:12px;background: url(../img/tg_bg2.png) no-repeat right; width:140px;bottom:4rem;right: 0; height:18px; line-height:18px;letter-spacing: 1px; position: absolute; padding-left: 10px; color:#fff;}
+.h_hot ul.over .txt p.name{color:#999;}
+.h_hot ul.over .txt {height: 58px;line-height: 48px;border-top: 1px solid #e6e6e6;}
+.h_hot  p.discount{font-size:14px; color:#f00;}
+
+	/*2F热卖商品*/
+.h_nhot .over{border-left: 1px solid #e2e2e2;overflow: hidden;margin: 0 1rem;}
+.h_nhot .over li{width:50%;margin:0;float: left; border:none;}
+.h_nhot ul.over li a{display:block; border:1px solid #e2e2e2; border-left:none;}
+.h_nhot .add_tu{width:100%; height:100%; margin:0 auto;}
+.h_nhot .infor{position:relative;    margin: 0 1rem;overflow: hidden;}
+.h_nhot .logotu{width: 30%;line-height: 2.5rem;}
+.h_nhot .logotu img{vertical-align:middle;}
+
+	/*3F热销商品*/
+.h_cx .item{border:none;}
+.h_cx .item.last{margin-bottom:0;}
+.h_cx ul{margin:0 1rem;}
+.h_cx .item .pricebox .ll{width:70%;}
+.h_cx .item .pricebox .ll p{height: 1.8rem;line-height: 2.3rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.h_cx .item del {font-size:1rem;color: #666;}
+.h_cx .logotu {width:25%;}
+.h_cx .logotu img{vertical-align:middle;}
+.h_cx .item .txt{height:3rem; line-height:3rem;}
+
+/*商品列表*/
+
+  /*排序*/
+.h_searchbar .fl{width:25%;padding-top:1rem;}
+.h_searchbar .price_ysd i{display:inline-block; width:8px; height:12px;margin-left: 4px;background: url(../img/icon_ud.png) no-repeat 0 -37px;background-size: 100%;}
+.h_searchbar .m_cur i.down{background-position:0 -18px;}
+.h_searchbar .m_cur i.up{background-position: 0 0;}
+
+	/*商品展示*/
+.h_list ul{margin-right:0.5rem; }
+.h_list ul li{ width:50%; float:left; }
+.h_list .item{background:#fff; margin:0.5rem 0 0 0.5rem;border:1px solid #dedede;border-radius: 3px;}
+.h_list .item .pic{text-align:center;}
+.h_list .item .pic img{ width: 70%; margin: 1rem auto 0;}
+.h_list .infor{margin-left:0.5rem;}
+.h_list .infor .price{font-size: 1.4rem;color: #9db032;}
+.h_list .infor .name{font-size: 1.4rem;height: 2rem;line-height: 2rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}

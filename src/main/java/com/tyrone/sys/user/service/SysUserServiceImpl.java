@@ -1,12 +1,12 @@
-package com.tyrone.sys.service;
+package com.tyrone.sys.user.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.tyrone.baseframework.base.service.BaseServiceImpl;
-import com.tyrone.sys.dao.SysUserDao;
-import com.tyrone.sys.vo.SysUserModel;
-import com.tyrone.sys.vo.SysUserQueryModel;
+import com.tyrone.sys.user.dao.SysUserDao;
+import com.tyrone.sys.user.vo.SysUserModel;
+import com.tyrone.sys.user.vo.SysUserQueryModel;
 
 @Service("sysUserService")
 public class SysUserServiceImpl extends BaseServiceImpl<SysUserModel, SysUserQueryModel> implements SysUserService{

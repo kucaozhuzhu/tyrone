@@ -1,4 +1,4 @@
-package com.tyrone.sys.vo;
+package com.tyrone.sys.user.vo;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;

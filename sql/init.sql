@@ -171,7 +171,7 @@ CREATE TABLE `qrtz_simprop_triggers` (
   CONSTRAINT `qrtz_simprop_triggers_ibfk_1` FOREIGN KEY (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`) REFERENCES `qrtz_triggers` (`SCHED_NAME`, `TRIGGER_NAME`, `TRIGGER_GROUP`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
+DROP TABLE IF EXISTS `sys_user`;
 CREATE TABLE `sys_user` (
   `uuid` varchar(32) NOT NULL,
   `status` int DEFAULT NULL,
@@ -187,7 +187,7 @@ CREATE TABLE `sys_user` (
   `remarks` varchar(32) DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+DROP TABLE IF EXISTS `sys_role`;
 CREATE TABLE `sys_role` (
   `uuid` varchar(32) NOT NULL,
   `status` int DEFAULT NULL,
@@ -199,7 +199,7 @@ CREATE TABLE `sys_role` (
   `name` varchar(10) DEFAULT NULL COMMENT '名称',
    PRIMARY KEY (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+DROP TABLE IF EXISTS `sys_permission`;
 CREATE TABLE `sys_permission` (
   `uuid` varchar(32) NOT NULL,
   `status` int   DEFAULT NULL,
@@ -211,21 +211,33 @@ CREATE TABLE `sys_permission` (
   `name` varchar(32) DEFAULT NULL COMMENT '名称',
    PRIMARY KEY (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+DROP TABLE IF EXISTS `sys_user_role`;
 CREATE TABLE `sys_user_role` (
   `uuid` varchar(32) NOT NULL,
+  `status` int   DEFAULT NULL,
+  `createTime` varchar(20) DEFAULT NULL,
+  `createUserId` varchar(32) DEFAULT NULL,
+  `deleteTime` varchar(20) DEFAULT NULL,
+  `deleteUserId` varchar(32) DEFAULT NULL,
+  `remarks` varchar(32) DEFAULT NULL COMMENT '备注',
   `userId` varchar(32) DEFAULT NULL COMMENT '用户id',
   `roleId` varchar(32) DEFAULT NULL COMMENT '角色id',
    PRIMARY KEY (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+DROP TABLE IF EXISTS `sys_role_permission`;
 CREATE TABLE `sys_role_permission` (
-  `uuid` varchar(32) NOT NULL,
+ `uuid` varchar(32) NOT NULL,
+  `status` int   DEFAULT NULL,
+  `createTime` varchar(20) DEFAULT NULL,
+  `createUserId` varchar(32) DEFAULT NULL,
+  `deleteTime` varchar(20) DEFAULT NULL,
+  `deleteUserId` varchar(32) DEFAULT NULL,
+  `remarks` varchar(32) DEFAULT NULL COMMENT '备注',
   `roleId` varchar(32) DEFAULT NULL COMMENT '角色id',
   `permissionId` varchar(32) DEFAULT NULL COMMENT '权限id',
    PRIMARY KEY (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+DROP TABLE IF EXISTS `sys_menu`;
 CREATE TABLE `sys_menu` (
   `uuid` varchar(32) NOT NULL,
   `status` int DEFAULT NULL,
@@ -240,9 +252,15 @@ CREATE TABLE `sys_menu` (
   `parentId` varchar(32) DEFAULT NULL COMMENT '菜单父id',
    PRIMARY KEY (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+DROP TABLE IF EXISTS `sys_role_menu`;
 CREATE TABLE `sys_role_menu` (
-  `uuid` varchar(32) NOT NULL,
+ `uuid` varchar(32) NOT NULL,
+  `status` int   DEFAULT NULL,
+  `createTime` varchar(20) DEFAULT NULL,
+  `createUserId` varchar(32) DEFAULT NULL,
+  `deleteTime` varchar(20) DEFAULT NULL,
+  `deleteUserId` varchar(32) DEFAULT NULL,
+  `remarks` varchar(32) DEFAULT NULL COMMENT '备注',
   `roleId` varchar(32) DEFAULT NULL COMMENT '角色id',
   `menuId` varchar(32) DEFAULT NULL COMMENT '菜单id',
    PRIMARY KEY (`uuid`)

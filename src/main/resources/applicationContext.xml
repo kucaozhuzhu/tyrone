@@ -23,7 +23,7 @@ http://www.springframework.org/schema/data/mongo http://www.springframework.org/
 	<aop:aspectj-autoproxy proxy-target-class="true"/> 
 	<context:annotation-config></context:annotation-config>
 	
-	<!-- 开启注解事务 只对当前配置文件有效 -->
+	<!-- 开启注解事务 只对当前配置文件有效 --> 
 	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
 	<!--事务管理器配置-->
 	 <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"> 

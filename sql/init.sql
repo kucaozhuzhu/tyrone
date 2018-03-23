@@ -266,7 +266,7 @@ CREATE TABLE `sys_role_menu` (
    PRIMARY KEY (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*123*/
+/*23456789*/
 
 
 
